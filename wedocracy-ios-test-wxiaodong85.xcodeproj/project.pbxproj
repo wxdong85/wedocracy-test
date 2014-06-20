@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A2F0112BF264472BB56947B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3062000B894B5FB05B23DB /* libPods.a */; };
+		E101F53A1953C250007D8B1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E101F52A1953C250007D8B1B /* AppDelegate.m */; };
+		E101F53B1953C250007D8B1B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E101F52F1953C250007D8B1B /* Main_iPad.storyboard */; };
+		E101F53C1953C250007D8B1B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E101F5311953C250007D8B1B /* Main_iPhone.storyboard */; };
+		E101F53D1953C250007D8B1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E101F5331953C250007D8B1B /* InfoPlist.strings */; };
+		E101F53E1953C250007D8B1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E101F5351953C250007D8B1B /* Images.xcassets */; };
+		E101F53F1953C250007D8B1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E101F5371953C250007D8B1B /* main.m */; };
+		E101F5401953C250007D8B1B /* wedocracy-ios-test-wxiaodong85-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E101F5381953C250007D8B1B /* wedocracy-ios-test-wxiaodong85-Info.plist */; };
+		E101F5431953C28A007D8B1B /* WishListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E101F5421953C28A007D8B1B /* WishListViewController.m */; };
+		E101F5461953C340007D8B1B /* WishDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E101F5451953C340007D8B1B /* WishDetailViewController.m */; };
+		E101F5491953C6F0007D8B1B /* WishItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E101F5481953C6F0007D8B1B /* WishItemCell.m */; };
+		E101F54C1953C9B4007D8B1B /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E101F54B1953C9B4007D8B1B /* AppModel.m */; };
+		E18679BB1953C1A700CEC2B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18679BA1953C1A700CEC2B3 /* Foundation.framework */; };
+		E18679BD1953C1A700CEC2B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18679BC1953C1A700CEC2B3 /* CoreGraphics.framework */; };
+		E18679BF1953C1A700CEC2B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18679BE1953C1A700CEC2B3 /* UIKit.framework */; };
+		E18679E01953C1A700CEC2B3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18679DF1953C1A700CEC2B3 /* XCTest.framework */; };
+		E18679E11953C1A700CEC2B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18679BA1953C1A700CEC2B3 /* Foundation.framework */; };
+		E18679E21953C1A700CEC2B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18679BE1953C1A700CEC2B3 /* UIKit.framework */; };
+		E18679EA1953C1A700CEC2B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E18679E81953C1A700CEC2B3 /* InfoPlist.strings */; };
+		E18679EC1953C1A700CEC2B3 /* wedocracy_ios_test_wxiaodong85Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E18679EB1953C1A700CEC2B3 /* wedocracy_ios_test_wxiaodong85Tests.m */; };
+		E1BB78E71953DAD5009BA7C2 /* GiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB78E61953DAD5009BA7C2 /* GiftCell.m */; };
+		E1BB78EA1953DAE1009BA7C2 /* IsCashCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB78E91953DAE1009BA7C2 /* IsCashCell.m */; };
+		E1BB78ED1953DAEA009BA7C2 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB78EC1953DAEA009BA7C2 /* PhotoCell.m */; };
+		E1BB78F01953DAF3009BA7C2 /* NotesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB78EF1953DAF3009BA7C2 /* NotesCell.m */; };
+		E1BB78F31953E9E2009BA7C2 /* TextInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BB78F21953E9E2009BA7C2 /* TextInputViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E18679E31953C1A700CEC2B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E18679AF1953C1A700CEC2B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E18679B61953C1A700CEC2B3;
+			remoteInfo = "wedocracy-ios-test-wxiaodong85";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F3062000B894B5FB05B23DB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9272154948664F4C8F479D83 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E101F5291953C250007D8B1B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E101F52A1953C250007D8B1B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E101F5301953C250007D8B1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		E101F5321953C250007D8B1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		E101F5341953C250007D8B1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E101F5351953C250007D8B1B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E101F5371953C250007D8B1B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E101F5381953C250007D8B1B /* wedocracy-ios-test-wxiaodong85-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "wedocracy-ios-test-wxiaodong85-Info.plist"; sourceTree = "<group>"; };
+		E101F5391953C250007D8B1B /* wedocracy-ios-test-wxiaodong85-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "wedocracy-ios-test-wxiaodong85-Prefix.pch"; sourceTree = "<group>"; };
+		E101F5411953C28A007D8B1B /* WishListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishListViewController.h; sourceTree = "<group>"; };
+		E101F5421953C28A007D8B1B /* WishListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishListViewController.m; sourceTree = "<group>"; };
+		E101F5441953C340007D8B1B /* WishDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishDetailViewController.h; sourceTree = "<group>"; };
+		E101F5451953C340007D8B1B /* WishDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishDetailViewController.m; sourceTree = "<group>"; };
+		E101F5471953C6F0007D8B1B /* WishItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishItemCell.h; sourceTree = "<group>"; };
+		E101F5481953C6F0007D8B1B /* WishItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishItemCell.m; sourceTree = "<group>"; };
+		E101F54A1953C9B4007D8B1B /* AppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppModel.h; sourceTree = "<group>"; };
+		E101F54B1953C9B4007D8B1B /* AppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppModel.m; sourceTree = "<group>"; };
+		E18679B71953C1A700CEC2B3 /* wedocracy-ios-test-wxiaodong85.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wedocracy-ios-test-wxiaodong85.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E18679BA1953C1A700CEC2B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E18679BC1953C1A700CEC2B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E18679BE1953C1A700CEC2B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E18679DE1953C1A700CEC2B3 /* wedocracy-ios-test-wxiaodong85Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wedocracy-ios-test-wxiaodong85Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E18679DF1953C1A700CEC2B3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E18679E71953C1A700CEC2B3 /* wedocracy-ios-test-wxiaodong85Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wedocracy-ios-test-wxiaodong85Tests-Info.plist"; sourceTree = "<group>"; };
+		E18679E91953C1A700CEC2B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E18679EB1953C1A700CEC2B3 /* wedocracy_ios_test_wxiaodong85Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wedocracy_ios_test_wxiaodong85Tests.m; sourceTree = "<group>"; };
+		E1BB78E51953DAD5009BA7C2 /* GiftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftCell.h; sourceTree = "<group>"; };
+		E1BB78E61953DAD5009BA7C2 /* GiftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftCell.m; sourceTree = "<group>"; };
+		E1BB78E81953DAE1009BA7C2 /* IsCashCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsCashCell.h; sourceTree = "<group>"; };
+		E1BB78E91953DAE1009BA7C2 /* IsCashCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsCashCell.m; sourceTree = "<group>"; };
+		E1BB78EB1953DAEA009BA7C2 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		E1BB78EC1953DAEA009BA7C2 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		E1BB78EE1953DAF3009BA7C2 /* NotesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesCell.h; sourceTree = "<group>"; };
+		E1BB78EF1953DAF3009BA7C2 /* NotesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesCell.m; sourceTree = "<group>"; };
+		E1BB78F11953E9E2009BA7C2 /* TextInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextInputViewController.h; sourceTree = "<group>"; };
+		E1BB78F21953E9E2009BA7C2 /* TextInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextInputViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E18679B41953C1A700CEC2B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E18679BD1953C1A700CEC2B3 /* CoreGraphics.framework in Frameworks */,
+				E18679BF1953C1A700CEC2B3 /* UIKit.framework in Frameworks */,
+				E18679BB1953C1A700CEC2B3 /* Foundation.framework in Frameworks */,
+				4A2F0112BF264472BB56947B /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E18679DB1953C1A700CEC2B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E18679E01953C1A700CEC2B3 /* XCTest.framework in Frameworks */,
+				E18679E21953C1A700CEC2B3 /* UIKit.framework in Frameworks */,
+				E18679E11953C1A700CEC2B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E101F5281953C250007D8B1B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E101F5291953C250007D8B1B /* AppDelegate.h */,
+				E101F52A1953C250007D8B1B /* AppDelegate.m */,
+				E101F52B1953C250007D8B1B /* Model */,
+				E101F52C1953C250007D8B1B /* ViewControllers */,
+				E101F52D1953C250007D8B1B /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E101F52B1953C250007D8B1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E101F54A1953C9B4007D8B1B /* AppModel.h */,
+				E101F54B1953C9B4007D8B1B /* AppModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E101F52C1953C250007D8B1B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E101F5411953C28A007D8B1B /* WishListViewController.h */,
+				E101F5421953C28A007D8B1B /* WishListViewController.m */,
+				E101F5441953C340007D8B1B /* WishDetailViewController.h */,
+				E101F5451953C340007D8B1B /* WishDetailViewController.m */,
+				E1BB78F11953E9E2009BA7C2 /* TextInputViewController.h */,
+				E1BB78F21953E9E2009BA7C2 /* TextInputViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E101F52D1953C250007D8B1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E101F5471953C6F0007D8B1B /* WishItemCell.h */,
+				E101F5481953C6F0007D8B1B /* WishItemCell.m */,
+				E1BB78E51953DAD5009BA7C2 /* GiftCell.h */,
+				E1BB78E61953DAD5009BA7C2 /* GiftCell.m */,
+				E1BB78E81953DAE1009BA7C2 /* IsCashCell.h */,
+				E1BB78E91953DAE1009BA7C2 /* IsCashCell.m */,
+				E1BB78EB1953DAEA009BA7C2 /* PhotoCell.h */,
+				E1BB78EC1953DAEA009BA7C2 /* PhotoCell.m */,
+				E1BB78EE1953DAF3009BA7C2 /* NotesCell.h */,
+				E1BB78EF1953DAF3009BA7C2 /* NotesCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E101F52E1953C250007D8B1B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E101F52F1953C250007D8B1B /* Main_iPad.storyboard */,
+				E101F5311953C250007D8B1B /* Main_iPhone.storyboard */,
+				E101F5331953C250007D8B1B /* InfoPlist.strings */,
+				E101F5351953C250007D8B1B /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E101F5361953C250007D8B1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E101F5371953C250007D8B1B /* main.m */,
+				E101F5381953C250007D8B1B /* wedocracy-ios-test-wxiaodong85-Info.plist */,
+				E101F5391953C250007D8B1B /* wedocracy-ios-test-wxiaodong85-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E18679AE1953C1A700CEC2B3 = {
+			isa = PBXGroup;
+			children = (
+				E18679C01953C1A700CEC2B3 /* wedocracy-ios-test-wxiaodong85 */,
+				E18679E51953C1A700CEC2B3 /* wedocracy-ios-test-wxiaodong85Tests */,
+				E18679B91953C1A700CEC2B3 /* Frameworks */,
+				E18679B81953C1A700CEC2B3 /* Products */,
+				9272154948664F4C8F479D83 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		E18679B81953C1A700CEC2B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E18679B71953C1A700CEC2B3 /* wedocracy-ios-test-wxiaodong85.app */,
+				E18679DE1953C1A700CEC2B3 /* wedocracy-ios-test-wxiaodong85Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E18679B91953C1A700CEC2B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E18679BA1953C1A700CEC2B3 /* Foundation.framework */,
+				E18679BC1953C1A700CEC2B3 /* CoreGraphics.framework */,
+				E18679BE1953C1A700CEC2B3 /* UIKit.framework */,
+				E18679DF1953C1A700CEC2B3 /* XCTest.framework */,
+				0F3062000B894B5FB05B23DB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E18679C01953C1A700CEC2B3 /* wedocracy-ios-test-wxiaodong85 */ = {
+			isa = PBXGroup;
+			children = (
+				E101F5281953C250007D8B1B /* Classes */,
+				E101F52E1953C250007D8B1B /* Resources */,
+				E101F5361953C250007D8B1B /* Supporting Files */,
+			);
+			path = "wedocracy-ios-test-wxiaodong85";
+			sourceTree = "<group>";
+		};
+		E18679E51953C1A700CEC2B3 /* wedocracy-ios-test-wxiaodong85Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E18679EB1953C1A700CEC2B3 /* wedocracy_ios_test_wxiaodong85Tests.m */,
+				E18679E61953C1A700CEC2B3 /* Supporting Files */,
+			);
+			path = "wedocracy-ios-test-wxiaodong85Tests";
+			sourceTree = "<group>";
+		};
+		E18679E61953C1A700CEC2B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E18679E71953C1A700CEC2B3 /* wedocracy-ios-test-wxiaodong85Tests-Info.plist */,
+				E18679E81953C1A700CEC2B3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E18679B61953C1A700CEC2B3 /* wedocracy-ios-test-wxiaodong85 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E18679EF1953C1A700CEC2B3 /* Build configuration list for PBXNativeTarget "wedocracy-ios-test-wxiaodong85" */;
+			buildPhases = (
+				A0ADB3BC6C304071BA2CAB6F /* Check Pods Manifest.lock */,
+				E18679B31953C1A700CEC2B3 /* Sources */,
+				E18679B41953C1A700CEC2B3 /* Frameworks */,
+				E18679B51953C1A700CEC2B3 /* Resources */,
+				48AC7986A9D042FB896E1BB3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wedocracy-ios-test-wxiaodong85";
+			productName = "wedocracy-ios-test-wxiaodong85";
+			productReference = E18679B71953C1A700CEC2B3 /* wedocracy-ios-test-wxiaodong85.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E18679DD1953C1A700CEC2B3 /* wedocracy-ios-test-wxiaodong85Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E18679F21953C1A700CEC2B3 /* Build configuration list for PBXNativeTarget "wedocracy-ios-test-wxiaodong85Tests" */;
+			buildPhases = (
+				E18679DA1953C1A700CEC2B3 /* Sources */,
+				E18679DB1953C1A700CEC2B3 /* Frameworks */,
+				E18679DC1953C1A700CEC2B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E18679E41953C1A700CEC2B3 /* PBXTargetDependency */,
+			);
+			name = "wedocracy-ios-test-wxiaodong85Tests";
+			productName = "wedocracy-ios-test-wxiaodong85Tests";
+			productReference = E18679DE1953C1A700CEC2B3 /* wedocracy-ios-test-wxiaodong85Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E18679AF1953C1A700CEC2B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Wu Xiao Dong";
+				TargetAttributes = {
+					E18679DD1953C1A700CEC2B3 = {
+						TestTargetID = E18679B61953C1A700CEC2B3;
+					};
+				};
+			};
+			buildConfigurationList = E18679B21953C1A700CEC2B3 /* Build configuration list for PBXProject "wedocracy-ios-test-wxiaodong85" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E18679AE1953C1A700CEC2B3;
+			productRefGroup = E18679B81953C1A700CEC2B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E18679B61953C1A700CEC2B3 /* wedocracy-ios-test-wxiaodong85 */,
+				E18679DD1953C1A700CEC2B3 /* wedocracy-ios-test-wxiaodong85Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E18679B51953C1A700CEC2B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E101F53C1953C250007D8B1B /* Main_iPhone.storyboard in Resources */,
+				E101F53E1953C250007D8B1B /* Images.xcassets in Resources */,
+				E101F53D1953C250007D8B1B /* InfoPlist.strings in Resources */,
+				E101F53B1953C250007D8B1B /* Main_iPad.storyboard in Resources */,
+				E101F5401953C250007D8B1B /* wedocracy-ios-test-wxiaodong85-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E18679DC1953C1A700CEC2B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E18679EA1953C1A700CEC2B3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48AC7986A9D042FB896E1BB3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0ADB3BC6C304071BA2CAB6F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E18679B31953C1A700CEC2B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1BB78ED1953DAEA009BA7C2 /* PhotoCell.m in Sources */,
+				E101F53F1953C250007D8B1B /* main.m in Sources */,
+				E101F54C1953C9B4007D8B1B /* AppModel.m in Sources */,
+				E1BB78F01953DAF3009BA7C2 /* NotesCell.m in Sources */,
+				E1BB78EA1953DAE1009BA7C2 /* IsCashCell.m in Sources */,
+				E101F5431953C28A007D8B1B /* WishListViewController.m in Sources */,
+				E101F5461953C340007D8B1B /* WishDetailViewController.m in Sources */,
+				E101F53A1953C250007D8B1B /* AppDelegate.m in Sources */,
+				E1BB78F31953E9E2009BA7C2 /* TextInputViewController.m in Sources */,
+				E101F5491953C6F0007D8B1B /* WishItemCell.m in Sources */,
+				E1BB78E71953DAD5009BA7C2 /* GiftCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E18679DA1953C1A700CEC2B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E18679EC1953C1A700CEC2B3 /* wedocracy_ios_test_wxiaodong85Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E18679E41953C1A700CEC2B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E18679B61953C1A700CEC2B3 /* wedocracy-ios-test-wxiaodong85 */;
+			targetProxy = E18679E31953C1A700CEC2B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E101F52F1953C250007D8B1B /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E101F5301953C250007D8B1B /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		E101F5311953C250007D8B1B /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E101F5321953C250007D8B1B /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		E101F5331953C250007D8B1B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E101F5341953C250007D8B1B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E18679E81953C1A700CEC2B3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E18679E91953C1A700CEC2B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E18679ED1953C1A700CEC2B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E18679EE1953C1A700CEC2B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E18679F01953C1A700CEC2B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9272154948664F4C8F479D83 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wedocracy-ios-test-wxiaodong85/Supporting Files/wedocracy-ios-test-wxiaodong85-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/wedocracy-ios-test-wxiaodong85/Supporting Files/wedocracy-ios-test-wxiaodong85-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E18679F11953C1A700CEC2B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9272154948664F4C8F479D83 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wedocracy-ios-test-wxiaodong85/Supporting Files/wedocracy-ios-test-wxiaodong85-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/wedocracy-ios-test-wxiaodong85/Supporting Files/wedocracy-ios-test-wxiaodong85-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E18679F31953C1A700CEC2B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wedocracy-ios-test-wxiaodong85.app/wedocracy-ios-test-wxiaodong85";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wedocracy-ios-test-wxiaodong85/wedocracy-ios-test-wxiaodong85-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "wedocracy-ios-test-wxiaodong85Tests/wedocracy-ios-test-wxiaodong85Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E18679F41953C1A700CEC2B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wedocracy-ios-test-wxiaodong85.app/wedocracy-ios-test-wxiaodong85";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wedocracy-ios-test-wxiaodong85/wedocracy-ios-test-wxiaodong85-Prefix.pch";
+				INFOPLIST_FILE = "wedocracy-ios-test-wxiaodong85Tests/wedocracy-ios-test-wxiaodong85Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E18679B21953C1A700CEC2B3 /* Build configuration list for PBXProject "wedocracy-ios-test-wxiaodong85" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E18679ED1953C1A700CEC2B3 /* Debug */,
+				E18679EE1953C1A700CEC2B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E18679EF1953C1A700CEC2B3 /* Build configuration list for PBXNativeTarget "wedocracy-ios-test-wxiaodong85" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E18679F01953C1A700CEC2B3 /* Debug */,
+				E18679F11953C1A700CEC2B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E18679F21953C1A700CEC2B3 /* Build configuration list for PBXNativeTarget "wedocracy-ios-test-wxiaodong85Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E18679F31953C1A700CEC2B3 /* Debug */,
+				E18679F41953C1A700CEC2B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E18679AF1953C1A700CEC2B3 /* Project object */;
+}

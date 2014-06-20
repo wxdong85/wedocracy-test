@@ -111,7 +111,7 @@
         if([AppModel sharedInstance].wishesArray.count > selection.row)
             dic = [AppModel sharedInstance].wishesArray[selection.row][@"Wish"];
 
-        vc.wishDetail = dic;
+        vc.wishDetail = [dic mutableCopy];
     }
 }
 

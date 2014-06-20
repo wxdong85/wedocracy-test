@@ -54,6 +54,12 @@
 
 - (void)deleteWish:(NSInteger)index {
 
+    NSString* wishId = self.wishesArray[index][@"Wish"][@"id"];
+    [self.requestManager DELETE:[NSString stringWithFormat:@"request_delete/%@", wishId] parameters:@{} success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"%@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", error);
+    }];
 }
 
 @end

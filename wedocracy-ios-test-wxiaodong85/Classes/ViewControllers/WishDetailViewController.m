@@ -230,18 +230,20 @@
 
 - (void)editGiftTitle {
 
-//    UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Gift title?"
-//                                message:@""
-//                       cancelButtonItem:[RIButtonItem itemWithLabel:@"Cancel" action:^{
-//        // Handle "Cancel"
-//    }]
-//                       otherButtonItems:[RIButtonItem itemWithLabel:@"Save" action:^{
-//        // Handle "Delete"
-//    }], nil];
-//
-//    alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
-//    alertView.delegate = self;
-//    [alertView show];
+    UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"New gift title?"
+                                message:self.wishDetail[@"gift"]
+                       cancelButtonItem:[RIButtonItem itemWithLabel:@"Cancel" action:^{
+        // Handle "Cancel"
+        
+    }]
+                       otherButtonItems:[RIButtonItem itemWithLabel:@"Save" action:^{
+        // Handle "Save"
+        self.wishDetail[@"gift"] = [alertView textFieldAtIndex:0];
+    }], nil];
+
+    alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
+    alertView.delegate = self;
+    [alertView show];
 }
 
 - (void)editAmount {

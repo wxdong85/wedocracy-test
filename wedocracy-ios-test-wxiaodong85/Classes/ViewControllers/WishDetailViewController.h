@@ -10,6 +10,6 @@
 
 @interface WishDetailViewController : UITableViewController <UIAlertViewDelegate>
 
-@property (nonatomic, strong) NSDictionary* wishDetail;
+@property (nonatomic, strong) NSMutableDictionary* wishDetail;
 
 @end
